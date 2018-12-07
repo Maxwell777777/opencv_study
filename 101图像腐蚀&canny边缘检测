@@ -1,0 +1,35 @@
+#include "stdafx.h"
+
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+using namespace cv;
+
+//图像腐蚀
+/*
+int main()
+{
+	Mat srcImage = imread("002.jpg");
+	imshow("src", srcImage);
+	Mat element = getStructuringElement(MORPH_RECT, Size(15, 15));
+	Mat dstImage;
+	erode(srcImage, dstImage, element);
+	imshow("dst", dstImage);
+	waitKey(0);
+	return 0;
+}
+*/
+//canny边缘检测
+/*
+int main()
+{
+	Mat srcImage=imread("002.jpg");
+	imshow("src", srcImage);
+	Mat edge, grayImage;
+	cvtColor(srcImage, grayImage, CV_BGR2GRAY);
+	blur(grayImage, edge, Size(3, 3));
+	Canny(edge, edge, 3, 9, 3);
+	imshow("dst", edge);
+	waitKey(0);
+	return 0;
+}
+*/
